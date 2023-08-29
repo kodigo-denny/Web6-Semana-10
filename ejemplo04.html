@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ejemplo04.js"></script>
+    <script>
+        let doc01 = new WritableDocument([], "archivo test 01.docx")
+        let doc02 = new WritableDocument([], "archivo test 02.docx")
+        let doc03 = new Document([], "lectura01.docx")
+        let doc04 = new WritableDocument([], "example04.docx")
+
+        let project = new Project([doc01, doc02, doc03, doc04], [doc01, doc02, doc04])
+
+        project.openAll()
+        project.saveAll()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
